@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color-light: #59B2FF;
+  --brand-color-mid: #3487CF;
+  --brand-color-dark: #1D6FB6;
+  --accent-color-purple: #B259FF;
+  --accent-color-fuschia: #FF59F9;
+  --accent-color-pink: #FF598B;
+  --accent-color-orange: #FF8B59;
+  --accent-color-yellow: #FFCD59;
+  --accent-color-lime: #E1FF59;
+  --accent-color-green: #59FF91;
+  --accent-color-cyan: #59FFF9;
+  --accent-color-navy: #6A59FF;
+  --feedback-color-danger: #FF5959;
+  --input-color-base: #1C1F21;
+  --input-color-stroke: #363B40;
+  --input-color-placeholder: #869198;
+  --shape-color-background: #131516;
+  --shape-color-body: #212427;
+  --shape-color-button: #2D3136;
+  --shape-color-hover: #383D42;
+  --text-color-body: #C8CDD0;
+  --text-color-heading: #F9F9F9;
+
+  --font-family-leckerli-one: 'Leckerli One', sans-serif;
+  --logo: 400 40px/1 var(--font-family-leckerli-one);
+
+  --font-family-baloo2: 'Baloo 2', sans-serif;
+  --heading-md: 800 28px/1 var(--font-family-baloo2);
+
+  --font-family-open-sans: 'Open Sans', sans-serif;
+  --body-md: 400 16px/1 var(--font-family-open-sans);
+  --body-md-semi-bold: 600 16px/1 var(--font-family-open-sans);
+  --body-sm: 400 14px/1 var(--font-family-open-sans);
+  --body-sm-semi-bold: 600 14px/1 var(--font-family-open-sans);
+  --body-xs: 400 12px/1 var(--font-family-open-sans);
+  --body-xs-semi-bold: 600 12px/1 var(--font-family-open-sans);
+}
+
+body {
+    overflow: hidden;
+    background-color: var(--shape-color-background);
+}
