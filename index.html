@@ -1,41 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
 </head>
+
 <body>
-    <div id="app">
-        <aside>
-            <div class="aside-container">
-                <header>
-                    <img class="logo" src="assets/icons/logo.svg" alt="">
-                    <div class="title">Festivite</div>
-                    <p class="subtitle">Crie um convite digital para o seu evento</p>
-                </header>
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <header>
+          <img class="logo" src="assets/icons/logo.svg" alt="">
+          <div class="title">Festivite</div>
+          <p class="subtitle">Crie um convite digital para o seu evento</p>
+        </header>
+      </div>
+    </aside>
+
+    <main>
+      <div class="main-container">
+        <header>
+          Crie seu convite
+        </header>
+
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="about">
+            <legend class="flex">
+              <img src="assets/icons/calendar.svg" alt="calendar icon">
+              Sobre o evento
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input type="text" id="title" name="title" 
+                placeholder="Nome do evento">
             </div>
-        </aside>
-        
-        <main>
-            <div class="main-container">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem et est doloremque possimus omnis illum, sint commodi at culpa qui explicabo labore dicta cumque facilis sapiente delectus aut, unde ex?</p>
+
+            <div class="flex">
+              <div class="input-wrapper">
+                <label for="dtTimeStart">Início</label>
+                <input type="datetime" id="dtTimeStart" name="dtTimeStart" 
+                  placeholder="DD/MM/AAAA, --:--">
+              </div>
+              <div class="input-wrapper">
+                <label for="dtTimeEnd">Fim</label>
+                <input type="datetime" id="dtTimeEnd" name="dtTimeEnd" 
+                  placeholder="DD/MM/AAAA, --:--">
+              </div>
             </div>
-        </main>
-    </div>
+
+            <div class="flex">
+              <div class="input-wrapper">
+                <label for="type">Tipo</label>
+                <input type="text" id="type" name="type" 
+                  placeholder="Presencial ou Online">
+              </div>
+              <div class="input-wrapper">
+                <label for="address">Local</label>
+                <input type="text" id="address" name="address" 
+                  placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="description">Descrição</label>
+              <input type="text" id="description" name="description" 
+                placeholder="Escreva sobre os detalhes do evento">
+            </div>
+          </fieldset>
+
+          <fieldset class="personalization">
+            <legend class="flex">
+              <img src="assets/icons/paintbrush-vertical.svg" alt="paintbrush icon">
+              Personalização
+            </legend>
+          </fieldset>
+
+          <fieldset class="contact">
+            <legend class="flex">
+              <img src="assets/icons/contact.svg" alt="contact icon">
+              Dados para contato
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome</label>
+              <input type="text" id="fullname" name="fullname" 
+                placeholder="Nome completo" required>
+              <div class="error">
+                <img src="assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" 
+                  placeholder="exemplo@email.com" pattern=".+@[a-z]+\.com">
+              </div>
+              <div class="input-wrapper">
+                <label for="telephone">Telefone</label>
+                <input type="tel" id="telephone" name="telephone" 
+                  placeholder="(99) 99999-9999">
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="terms-wrapper input-wrapper checkbox-wrapper">
+          <div class="checkbox-image"></div>
+          <input type="checkbox" name="terms" id="terms">
+
+          <label for="terms">Declaro que li e concordo com os <strong>Termos e Condiçoes</strong> e com a
+            <strong>Política de Privacidade</strong> da instituição.</label>
+        </div>
+
+        <div class="actions-wrapper">
+          <button class="btn-primary" type="submit">
+            Gerar convite
+          </button>
+        </div>
+
+      </div>
+    </main>
+  </div>
 </body>
+
 </html>

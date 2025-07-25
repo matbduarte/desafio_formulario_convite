@@ -29,21 +29,34 @@
   --text-color-heading: #F9F9F9;
 
   --font-family-leckerli-one: 'Leckerli One', sans-serif;
-  --logo: 400 40px/1 var(--font-family-leckerli-one);
+  --logo: 400 40px var(--font-family-leckerli-one);
 
   --font-family-baloo2: 'Baloo 2', sans-serif;
-  --heading-md: 800 28px/1 var(--font-family-baloo2);
+  --heading-md: 800 28px var(--font-family-baloo2);
+  --heading-sm: 800 18px var(--font-family-baloo2);
 
   --font-family-open-sans: 'Open Sans', sans-serif;
-  --body-md: 400 16px/1 var(--font-family-open-sans);
-  --body-md-semi-bold: 600 16px/1 var(--font-family-open-sans);
-  --body-sm: 400 14px/1 var(--font-family-open-sans);
-  --body-sm-semi-bold: 600 14px/1 var(--font-family-open-sans);
-  --body-xs: 400 12px/1 var(--font-family-open-sans);
-  --body-xs-semi-bold: 600 12px/1 var(--font-family-open-sans);
+  --body-md: 400 16px var(--font-family-open-sans);
+  --body-md-semi-bold: 600 16px var(--font-family-open-sans);
+  --body-sm: 400 14px var(--font-family-open-sans);
+  --body-sm-semi-bold: 600 14px var(--font-family-open-sans);
+  --body-xs: 400 12px var(--font-family-open-sans);
+  --body-xs-semi-bold: 600 12px var(--font-family-open-sans);
 }
 
 body {
     overflow: hidden;
     background-color: var(--shape-color-background);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }
