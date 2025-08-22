@@ -16,7 +16,7 @@ label {
   font: var(--body-sm);
   color: var(--text-color-body);
   display: block;
-  margin-bottom: 0.25rem; /* 4px */
+  margin-bottom: 0.75rem; /* 12px */
 }
 
 input:focus,

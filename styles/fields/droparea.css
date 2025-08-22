@@ -1,14 +1,10 @@
 .dropzone {
-    border: 2px dashed transparent;
-    outline: 1px dashed #D6D3D1;
-    border-radius: .25rem;
-
-    display: grid;
+    display: flex;
+    align-items: center;
     justify-items: center;
     gap: .5rem;
 
     text-align: center;
-    padding: 1.75rem 1rem;
 
     position: relative;
     & input {
@@ -20,20 +16,7 @@
     }
 
     & p {
-        color: #A8A29E;
-    }
-
-    &:hover, &:has(input:focus) {
-        outline-width: 0;
-        border-color: #F3541C;
-        background-color: #FEE7D6;
-
-         & p {
-            color: #A8A290;
-         }
-
-         & svg path {
-            stroke: #F3541C;
-         }
+        font: var(--body-md);
+        color: var(--input-color-placeholder);
     }
 }

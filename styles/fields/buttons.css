@@ -1,30 +1,38 @@
 button {
     all: unset;
-    font-weight: 500;
-    color: #E43A12;
-    padding: .75rem 1.5rem;
+    color: var(--brand-color-dark);
+    padding: .75rem 1.25rem;
     border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
 
     cursor: pointer;
 
+    img {
+        width: 1.25rem; /* 20px */
+        height: 1.25rem; /* 20px */
+    }
+
     &.btn-primary {
+        font: var(--body-md-semi-bold);
         color: white;
-        background-color: #E43A12;
+        background-color: var(--brand-color-dark);
 
         &:hover,
         &:focus {
-            background-color: #F3541C;
+            background-color: var(--brand-color-mid);
         }
     }
 
     &.btn-secondary {
-        margin-left: auto;
-        border: 1px solid #E43A12;
+        font: var(--body-sm-semi-bold);
+        color: white;
+        background-color: var(--shape-color-button);
 
         &:hover,
         &:focus {
-            color: #E43A12;
-            outline: .25rem solid #FEE7D6;
+            background-color: var(--shape-color-hover);
         }
     }
 }

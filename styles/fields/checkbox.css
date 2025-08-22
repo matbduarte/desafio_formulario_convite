@@ -1,13 +1,24 @@
-.terms-wrapper {
+.terms {
     margin-top: 3rem;
+    border-top: 1px solid var(--input-color-stroke);
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-wrapper {
     display: flex;
     gap: .75rem;
     align-items: flex-start;
 
-    & strong {
-        font-weight: 500;
-        color: #DC2626;
+    & a {
+        font: var(--body-sm-semi-bold);
+        color: var(--brand-color-light);
     }
+}
+
+.terms-wrapper + .terms-wrapper {
+    margin-top: 0.25rem;
 }
 
 .checkbox-wrapper {
@@ -20,16 +31,10 @@
     }
 
     .checkbox-image {
-        flex: 0 0 1.5rem;
-        height: 1.5rem;
+        flex: 0 0 1.25rem;
+        height: 1.25rem;
 
         background-image: url(../../assets/icons/checkbox-default.svg);
-    }
-
-    &:hover, &:focus-within {
-        .checkbox-image {
-            background-image: url(../../assets/icons/checkbox-hover.svg);
-        }
     }
 
     &:has(:checked) .checkbox-image {

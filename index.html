@@ -162,7 +162,17 @@
               </div>
             </div>
 
-            <label>Estilo</label>
+            <div class="droparea-wrapper">
+              <label for="input-file">Foto de capa</label>
+              <div class="dropzone">
+                <button class="btn-secondary" type="button">
+                  <input type="file" id="input-file" name="input-file">
+                  <img src="assets/icons/upload.svg" alt="ícone de upload">
+                  <span>Selecionar</span>
+                </button>
+                <p>Nenhum arquivo selecionado</p>
+              </div>
+            </div>
 
           </fieldset>
 
@@ -197,15 +207,28 @@
           </fieldset>
         </form>
 
-        <div class="terms-wrapper input-wrapper checkbox-wrapper">
-          <div class="checkbox-image"></div>
-          <input type="checkbox" name="terms" id="terms">
-          <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></label>
+        <div class="terms">
+          <div class="terms-wrapper input-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Li e concordo com os <a>Termos e Condições</a> e com a <a>Política de Privacidade</a></label>
+          </div>
+          <div class="terms-wrapper input-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
+          </div>
+          <div class="terms-wrapper input-wrapper checkbox-wrapper">
+            <div class="checkbox-image"></div>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">Aceito receber atualizações e promoções por SMS</label>
+          </div>
         </div>
 
         <div class="actions-wrapper">
           <button class="btn-primary" type="submit">
-            Gerar convite
+            <img src="assets/icons/ticket.svg" alt="ícone de ticket">
+            <span>Gerar convite</span>
           </button>
         </div>
 
