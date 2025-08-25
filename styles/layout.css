@@ -55,5 +55,20 @@ main {
       font: var(--heading-md);
       color: var(--text-color-heading);
     }
+
+    & .event-theme {
+      padding-top: 0.75rem;
+    }
+
+    & .style-and-photo {
+      padding-top: 0.75rem;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+      & .event-style {
+        min-width: 11rem;
+      }
+    }
   }
 }

@@ -1,0 +1,38 @@
+.segmented-control {
+    display: flex;
+    gap: 0;
+    border-radius: 0.5rem;
+    border: 2px solid var(--input-color-stroke);
+    background: var(--input-color-base);
+    overflow: hidden;
+    padding: 0.25rem; /* 4px */
+}
+
+.segmented-control input[type="radio"] {
+  display: none;
+}
+
+.segmented-control label {
+  margin: 0;
+  flex: 1;
+  cursor: pointer;
+  padding: 0.75rem 1.125rem; /* 12px 18px */
+  border: none;
+  border-radius: 0.5rem; /* 8px */
+  background: transparent;
+  color: var(--text-color-body);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.segmented-control input[type="radio"]:checked + label {
+  background: var(--shape-color-button);
+  color: var(--text-color-heading);
+}
+
+.segmented-control input[type="radio"]:checked + label svg {
+  color: var(--brand-color-light);
+}

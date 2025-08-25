@@ -38,6 +38,10 @@ label + .radio-wrapper {
         left: .5rem;
     }
 
+    &:hover, &:focus-within {
+        background-color: var(--shape-color-hover);
+    }
+
     &:has(:checked) {
         border: 2px solid var(--brand-color-light);
     }
